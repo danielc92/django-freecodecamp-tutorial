@@ -39,8 +39,9 @@ python manage.py createsuperuser
 python manage.py startapp products
 ```
 
-# Add a simple model for products and migrate
+# Add a simple model for products, migrate and register model in admin.py
 ```
+# Note always run these two commands when making changes to database models
 python manage.py makemigrations
 python manage.py migrate
 ```
