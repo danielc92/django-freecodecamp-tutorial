@@ -55,3 +55,13 @@ from models.products import Product
 Product.objects.all()
 Product.objects.create(title='Small Licorice Raspberry Bar',description='Candy bar with licorice',price='0.40')
 ```
+
+# Creating and using custom views
+- Creating view within project
+- Adding view to urls.py
+
+# Extracting information from request object
+- headers
+- user
+- http method
+
