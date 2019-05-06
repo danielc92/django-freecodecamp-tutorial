@@ -45,3 +45,13 @@ python manage.py startapp products
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+# Using database from django shell
+View records from database
+Create new records
+```
+python manage.py shell
+from models.products import Product
+Product.objects.all()
+Product.objects.create(title='Small Licorice Raspberry Bar',description='Candy bar with licorice',price='0.40')
+```
