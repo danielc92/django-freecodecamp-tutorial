@@ -65,3 +65,17 @@ Product.objects.create(title='Small Licorice Raspberry Bar',description='Candy b
 - user
 - http method
 
+# Dynamic routing
+
+# Using Model forms
+
+# Exercise 1
+1. create a new app named blog
+2. add blog to django project
+3. create model named article
+4. run migrations
+5. create modelform for article
+6. create articlelist.html and articledetail.html
+7. add article model to admin
+8. save a new article object in admin
+

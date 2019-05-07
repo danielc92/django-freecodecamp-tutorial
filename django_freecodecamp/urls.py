@@ -21,5 +21,5 @@ urlpatterns = [
 	path('products/create/', prod_create_view, name='products-create'),
 	path('products/view/', prod_display_view, name='products-view'),
     path('products/home/', prod_home_view, name='products-home'),
-    path('admin/', admin.site.urls),
+    path('admin-product-dashboard/', admin.site.urls),
 ]
