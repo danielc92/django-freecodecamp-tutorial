@@ -4,6 +4,13 @@ from django.urls import reverse
 from .models import Product
 from .forms import ProductForm, RawProductForm
 
+# Home Page
+def prod_home_view(request, *args, **kwargs):
+
+    context = {'title':'Home Page'}
+
+    return render(request, 'products-home.html', context)
+
 # Display all products view
 def prod_display_view(request, *args, **kwargs):
 

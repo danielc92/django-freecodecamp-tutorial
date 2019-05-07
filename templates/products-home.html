@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="section">
+	<section class="container">
+		<section class="content">
+			<h2>Summary</h2>
+			<p>This web application is built using Django Framework in Python 3.7. It also uses Bulma CSS framework. This web application is based off and adapted from the tutorial <a href="https://www.youtube.com/watch?v=F5mRW0jo-U4">Python Django Web Framework - Full Course for Beginners</a> by FreeCodeCamp.</p>
+			<h2>What is the purpose of this application?</h2>
+			<p>This application purpose is to learn the Django framework from scratch. Previously I've worked in flask and so I'm expecting the transition to Django to be relatively less painful, having the base knowledge of web development and flask under my belt. It will also serve the purpose of comparing Flask and Django to see which framework is most suitable under a given scenario, working under the presumption that every framework has its strengths and weaknesses.</p>
+			<h2>Routes</h2>
+			<h6>View</h6>
+			The view route allows the user to query the database and view products in a card listing format.
+			<div>
+			<a style="margin: 1rem 0rem;" class="button is-outlined is-primary" href="{{ url_view }}">View all Products</a>
+			</div>
+			<h6>Create</h6>
+			The create route allows users to create new products. Forms are validating and processed securely in the backend.
+			<a style="margin: 1rem 0rem;" class="button is-outlined is-primary" href="{{ url_create }}">Create a Product</a>
+			
+		</section>
+	</section>
+
+</section>
+{% endblock content %}
