@@ -1,11 +1,16 @@
-# Project Title
-A few sentences about the project.
-What are you building?
-What problem are you trying to solve?
-Who is the project for? Timeframe?
+# Django Tutorial from freecodecamp
+Attempting to complete 3-4hour Django course from free code camp. The course covers the following topics.
+- Setting up environment
+- Creating Django App
+- Using Admin features
+- Creating Views
+- Creating Templates
+- Creating and updating database models (sqlite3)
+- Different methods of using forms in Django
 
 # Before you get started
-Concepts/Software/Programming modules a user may have to read up on before getting started with this project. eg. 'Read about [neural networks](https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6?gi=44b811975215) before getting started.'
+- Python 3.7 knowledge
+- Web development knowledge (forms, requests, html, css, routing) 
 
 # Setup
 **How to obtain this repository:**
@@ -13,24 +18,20 @@ Concepts/Software/Programming modules a user may have to read up on before getti
 git clone https//link.to.this.projects.git-repo
 ```
 **Modules/dependencies:**
-- `pandas`
-- `requests`
-- `jupyter`
-- `sklearn`
+- `django`
 
-Install the following dependences:
+Activate virtual env and install the following dependences:
 ```sh
-cd /local/location/of/this/repo
-pip install requirements.txt
+source location-of-venv/bin/activate
+pip install django
 ```
 
 # Tests
 - Tests performed on this project. What did you do? Which files were used? Was it successful?
 
 # Contributors
-- Name of Contributor 1
-- Name of Contributor 2
+- Daniel Corcoran
 
 # Sources
-- Sources for techniques/tutorials used in this project to help newcomers
-- Sources for data used in this project
+- [Django Course](https://www.youtube.com/watch?v=F5mRW0jo-U4)
+- [Django Documentation](https://docs.djangoproject.com/en/2.2/)
