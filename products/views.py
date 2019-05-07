@@ -1,8 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from django.urls import reverse
 from .models import Product
 from .forms import ProductForm, RawProductForm
 
-# Create your views here.
+# Display all products view
 def prod_display_view(request, *args, **kwargs):
 
     data = Product.objects.all()
@@ -12,6 +14,8 @@ def prod_display_view(request, *args, **kwargs):
 
     return render(request, 'products-display.html', context)
 
+
+# Create a product view
 def prod_create_view(request, *args, **kwargs):
 
     """ USING RawProductForm Class (has validators) """
@@ -22,12 +26,16 @@ def prod_create_view(request, *args, **kwargs):
         if form.is_valid():
             print(form.cleaned_data)
             Product.objects.create(**form.cleaned_data)
+            return HttpResponse('<code>You have successfully added a new product to the database.</code>')
         else:
             print(my_form.errors)
 
     context = {
         'form':form
     }
+
+    url = reverse('products-view')
+    print(url)
     
     return render(request, 'products-create.html', context)
 
