@@ -19,7 +19,8 @@ def prod_create_view(request, *args, **kwargs):
     if form.is_valid():
         form.save()
 
-    context = {'title':'Create a product'}
+    context = {'title':'Create a product',
+    'form':form}
 
-    return render(request, 'products-view.html', context)
+    return render(request, 'products-create.html', context)
 
